@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // MongoDB connection
 const connectDB = async () => {
   try {
-    const db_res = await mongoose.connect(`mongodb+srv://graphiantztt:ixAIg0wbSSinKJ6K@tbigeu.fisg1.mongodb.net/?retryWrites=true&w=majority&appName=tbigeu`, {});
+    const db_res = await mongoose.connect(``, {});
     console.log("MONGODB IS CONNECTED");
   } catch (error) {
     console.log(`MONGODB CONNECTION FAILED ERROR: ${error}`);
